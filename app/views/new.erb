@@ -1,0 +1,22 @@
+<h1>Upload a new Dope Ass Recipe</h1>
+<form action="/recipes" method="POST">
+  <fieldset>
+    <ul>
+      <li>
+        <label>Recipe Name</label>
+        <input type="text" id="name" name="recipe[name]" placeholder="Name"> 
+      </li>
+      <li>
+        <label>Recipe Ingredients<label>
+        <input type="text" id="ingredients" name="recipe[ingredients]" placeholder="Ingredients">
+      </li>
+      <li>
+        <label>Recipe Cook Time</label>
+        <input type="text" id="cook_time" name="recipe[cook_time]" placeholder="Cook Time">
+      </li>
+      <li>
+        <input type="submit" value="submit">
+      </li>
+    </ul>
+  </fieldset>
+</form>

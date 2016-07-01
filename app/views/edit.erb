@@ -1,0 +1,23 @@
+<h1>Edit your Dope Ass Recipe</h1>
+<form action="/recipes/<%= @recipe.id %>" method="POST">
+  <fieldset>
+    <input id="hidden" type="hidden" name="_method" value="patch">
+    <ul>
+      <li>
+        <label>Recipe Name</label>
+        <input type="text" id="name" name="recipe[name]" value="<%= @recipe.name %>"> 
+      </li>
+      <li>
+        <label>Recipe Ingredients<label>
+        <input type="text" id="ingredients" name="recipe[ingredients]" value="<%= @recipe.ingredients %>">
+      </li>
+      <li>
+        <label>Recipe Cook Time</label>
+        <input type="text" id="cook_time" name="recipe[cook_time]" value="<%= @recipe.cook_time %>">
+      </li>
+      <li>
+        <input type="submit" value="submit">
+      </li>
+    </ul>
+  </fieldset>
+</form>
